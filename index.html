@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="mainQuery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <a id="logo"><img class="siteLogo" src=https://gfx.r-gol.com/media/pub/logo2.png></a>
+
+        <div class="headerButtons">
+            <div class="searchContainer">
+                <input class="searchBar" type="search" placeholder="Cauta...">
+                <button type="submit" class="loupe" href=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="submit" class="x-mark" href=""><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <a id="user"><i class="fa-solid fa-user"></i></a>
+            <a class="navButtons" href=""><i class="fa-solid fa-heart"></i></a>
+            <a class="navButtons" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+
+    <div class="containerSearch"><input type="search" class="searchMin" placeholder="Cauta..."></div>
+
+    <nav id="nav">
+
+        <a id="burger" class="navButtons"><i class="fa-solid fa-bars"></i></a>
+
+        <ul class="secondNav" id="secondNav">
+            <li><a class="gheteFotbal" id="gheteFotbal" href="">Ghete de fotbal</a>
+                <ul class="toggleMenuGhete" id="toggleGhete">
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Modele ghete</b></a></li>
+                        <li><a class="list" href="">Crampoane (Pentru iarba)</a></li>
+                        <li><a class="list" href="">Ghete pentru sintetic (iarba artificiala)</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Categorie</b></a></li>
+                        <li><a class="list" href="">Pentru incepatori</a></li>
+                        <li><a class="list" href="">Pentru profesionisti</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Marca</b></a></li>
+                        <li><a class="list" href="">Nike</a></li>
+                        <li><a class="list" href="">Adidas</a></li>
+                        <li><a class="list" href="">Puma</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="" id="portari">Portari</a>
+                <ul class="toggleMenuPortari" id="togglePortari">
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Manusi</b></a></li>
+                        <li><a class="list" href="">Reusch</a></li>
+                        <li><a class="list" href="">Uhlsport</a></li>
+                        <li><a class="list" href="">4keepers</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Imbracaminte</b></a></li>
+                        <li><a class="list" href="">Bluze</a></li>
+                        <li><a class="list" href="">Tricouri</a></li>
+                        <li><a class="list" href="">Pantaloni</a></li>
+                        <li><a class="list" href="">Sorturi</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="" id="mingi">Mingi de fotbal</a>
+                <ul class="toggleMenuMingi" id="toggleMingi">
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Dimensiuni</b></a></li>
+                        <li><a class="list" href="">Senior (Dimensiunea 5)</a></li>
+                        <li><a class="list" href="">Junior (Dimensiunea 4)</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Marca</b></a></li>
+                        <li><a class="list" href="">Nike</a></li>
+                        <li><a class="list" href="">Adidas</a></li>
+                        <li><a class="list" href="">Puma</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Mingi pentru exercitii</b></a></li>
+                        <li><a class="list" href="">Mingi pentru freestyle</a></li>
+                        <li><a class="list" href="">Mingi pentru plaja</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a class="reduceri" id="reduceri" href="">Reduceri %</a>
+                <ul class="toggleMenuReduceri" id="toggleReduceri">
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Ghete</b></a></li>
+                        <li><a class="list" href="">Nike</a></li>
+                        <li><a class="list" href="">Adidas</a></li>
+                        <li><a class="list" href="">Puma</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Manusi</b></a></li>
+                        <li><a class="list" href="">Reusch</a></li>
+                        <li><a class="list" href="">Uhlsport</a></li>
+                    </ul>
+
+                    <ul class="toggle">
+                        <li><a class="bold"><b>Mingi</b></a></li>
+                        <li><a class="list" href="">Dimensiunea 5</a></li>
+                        <li><a class="list" href="">Dimensiunea 4</a></li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="carousel" id="carousel">
+            <div class="carousel-container">
+                <div class="slide "><img class="content"
+                        src="https://gfx.r-gol.com/media/pub/03marzec/butypilkatest.webp" alt="Boots Photo #1">
+                </div>
+                <div class="slide"> <img class="content"
+                        src="https://c.cdnmp.net/433579212/bms/a413d6f4-9e2b-11ed-a966-4cd98fbf6c3d.jpg" alt=""
+                        srcset=""></div>
+                <div class="slide"> <img class="content"
+                        src="https://c.cdnmp.net/433579212/bms/ff4cd045-b8ec-11ed-a966-4cd98fbf6c3d.jpg" alt=""></div>
+            </div>
+
+            <button class="btn-carousel next" id="next">&#62;</button>
+            <button class="btn-carousel previous" id="prev">&#60;</button>
+        </div>
+
+        <div class="container">
+            <div><img src="https://gfx.r-gol.com/media/pub/ikony_usp/cashback.svg" alt=""><span>10%
+                    cashback</span></div>
+            <div><img src="https://gfx.r-gol.com/media/pub/ikony_usp/delivery.svg" alt=""><span>Livrare
+                    gratuita
+                    de la 250 de lei</span></div>
+            <div><img src="https://gfx.r-gol.com/media/pub/ikony_usp/recommend.svg" alt=""><span>Evaluat la
+                    4.9 pe Trustmate</span></div>
+            <div><img src="https://gfx.r-gol.com/media/pub/ikony_usp/return.svg" alt=""><span>30 de zile
+                    pentru retur</span></div>
+        </div>
+
+        <section class="images-container">
+            <div><img src="https://gfx.r-gol.com/media/pub/03marzec/NikeBlastDwaBanery.webp" alt=""><button
+                    id="productsButton">Cumpara
+                    acum</button></div>
+            <div><img src="https://gfx.r-gol.com/media/pub/KwiecienBanery/adidasParley.webp" alt=""></div>
+        </section>
+    </main>
+
+    <section class="form-body" id="registerForm">
+        <form action="">
+            <fieldset>
+                <legend>Inregistare cont</legend>
+
+                <div class="inputBox">
+                    <input type="text" required="required" id="name">
+                    <span>Numele</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" required="required" id="lname">
+                    <span>Prenumele</span>
+                </div>
+
+                <div class="inputBox">
+                    <input id="createEmail" type="text" required>
+                    <span>Adresa de mail</span>
+                </div>
+
+                <div class="inputBox">
+                    <input id="createParola" type="text" required>
+                    <span>Parola</span>
+                </div>
+                <!-- 
+                <select required class="inputGender" name="gender" id="gender">
+                    <option class="placeholder" value="0" disabled selected>Selecteaza sexul</option>
+                    <option value="Male">Masculin</option>
+                    <option value="Female">Feminin</option>
+                </select>
+
+                <input type="date" class="inputDate" name="birth" id="birth" required> -->
+            </fieldset>
+
+            <div class="button">
+                <button type="submit" class="submit-btn" id="createAccount">Inregistare</button>
+            </div>
+
+            <p id="pLogIn">Aveti deja un cont?</p>
+        </form>
+    </section>
+
+    <section class="form-body" id="logIn">
+        <form action="">
+            <fieldset class="logare">
+                <legend>Logare</legend>
+
+                <div class="inputBox">
+                    <input id="checkMail" type="text" required>
+                    <span>Adresa de mail</span>
+                </div>
+
+                <div class="inputBox">
+                    <input id="checkPass" type="text" required>
+                    <span>Parola</span>
+                </div>
+
+            </fieldset>
+
+            <div class="button">
+                <button class="submit-btn" id="log-in">Logheaza-te</button>
+            </div>
+
+            <p id="register">Inregistreaza-te</p>
+        </form>
+    </section>
+
+    <section class="produse"></section>
+
+    <footer>
+        <div class="list">
+            <h4>Deservirea clientului</h4>
+            <ul>
+                <li>Livrarea</li>
+                <li>Returnari</li>
+                <li>Reclamatii</li>
+                <li>Intrebari frecvente</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h4>Informatii</h4>
+            <ul>
+                <li>Despre noi</li>
+                <li>Politica de confidentialitate</li>
+                <li>Regulamentul de achizitie</li>
+                <li>Serviciul de club</li>
+            </ul>
+        </div>
+
+        <div class="info">
+
+            <div class="contact">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <p>0040377102239</p>
+            </div>
+
+            <div class="contact">
+                <div><i class="fa-regular fa-envelope-open"></i></div>
+                <p>info@R-GOL.ro</p>
+            </div>
+
+            <div class="trust">
+                <p>4.9</p>
+                <div><img src="https://trustmate.io/images/logo-trustmate-2022.png" alt=""></div>
+            </div>
+
+            <div class="brands">
+                <ul>
+                    <li>
+                        <div><i class="fa-brands fa-facebook-f"></i></div>
+                    </li>
+                    <li>
+                        <div><i class="fa-brands fa-instagram"></i></div>
+                    </li>
+                    <li>
+                        <div><i class="fa-brands fa-tiktok"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <section class="burger-menu">
+        <div class="header-burger"><a><img
+                    src="https://www.r-gol.com/static/sources/www/assets/copy-to-build/logos/mobile-menu-logo.svg"
+                    alt=""></a><a class="hide-burger"><i class="fa-solid fa-xmark"></i></a></div>
+        <div><a>Ghete Fotbal</a><a><i class="fa-solid fa-angle-right"></i></a></div>
+        <div><a>Portari</a><a><i class="fa-solid fa-angle-right"></i></a></div>
+        <div><a>Mingi</a><a><i class="fa-solid fa-angle-right"></i></a></div>
+        <div><a>Reduceri</a><a><i class="fa-solid fa-angle-right"></i></a></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

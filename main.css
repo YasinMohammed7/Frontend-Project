@@ -1,0 +1,686 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  font-family: Montserrat, Fira Sans Extra Condensed, sans-serif;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+.header .siteLogo {
+  width: 164px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.header .headerButtons {
+  width: 450px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+.header .headerButtons a {
+  color: white;
+  text-decoration: none;
+}
+.header .headerButtons a:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+.header .headerButtons .searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+.header .headerButtons .searchContainer .searchBar {
+  background-color: inherit;
+  height: 40px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 900;
+  outline: 0;
+}
+.header .headerButtons .searchContainer .loupe {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding-right: 10px;
+}
+.header .headerButtons .searchContainer .x-mark {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding-right: 10px;
+  font-size: 19px;
+  display: none;
+}
+.header .headerButtons .searchContainer .loupe:hover {
+  color: greenyellow;
+}
+
+.containerSearch {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  top: 8%;
+  height: 30px;
+  padding: 5px 0;
+  display: none;
+}
+.containerSearch .searchMin {
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  height: 100%;
+  border-bottom: 1px solid #727272;
+  color: #727272;
+  padding-left: 10px;
+}
+
+nav {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 8%;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+nav .secondNav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+nav .secondNav a {
+  color: white;
+  font-weight: 600;
+}
+nav .secondNav a:hover {
+  color: greenyellow;
+  transition: 0.3s;
+}
+nav .secondNav .reduceri {
+  color: #FF0000;
+}
+nav .secondNav .toggleMenuGhete {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 53%, 0.2);
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 75%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+nav .secondNav .toggleMenuGhete .toggle {
+  list-style: none;
+  padding-top: 20px;
+}
+nav .secondNav .toggleMenuGhete .toggle li {
+  padding-top: 15px;
+}
+nav .secondNav .toggleMenuGhete .toggle:nth-child(3) {
+  margin-top: 26px;
+}
+nav .secondNav .toggleMenuGhete .list {
+  color: grey;
+  font-weight: 100;
+}
+nav .secondNav .toggleMenuGhete .list:hover {
+  color: greenyellow;
+}
+nav .secondNav .toggleMenuGhete .bold {
+  color: black;
+}
+nav .secondNav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+nav .toggleMenuPortari {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 53%, 0.2);
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 75%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+nav .toggleMenuPortari .toggle {
+  list-style: none;
+  padding-top: 20px;
+}
+nav .toggleMenuPortari .toggle li {
+  padding-top: 15px;
+}
+nav .toggleMenuPortari .toggle:nth-child(2) {
+  padding-top: 41px;
+}
+nav .toggleMenuPortari .list {
+  color: grey;
+  font-weight: 100;
+}
+nav .toggleMenuPortari .list:hover {
+  color: greenyellow;
+}
+nav .toggleMenuPortari .bold {
+  color: black;
+}
+nav .toggleMenuPortari li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+nav .toggleMenuMingi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 53%, 0.2);
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 75%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+nav .toggleMenuMingi .toggle {
+  list-style: none;
+  padding-top: 20px;
+}
+nav .toggleMenuMingi .toggle li {
+  padding-top: 15px;
+}
+nav .toggleMenuMingi .toggle:nth-child(2) {
+  padding-top: 45px;
+}
+nav .toggleMenuMingi .list {
+  color: grey;
+  font-weight: 100;
+}
+nav .toggleMenuMingi .list:hover {
+  color: greenyellow;
+}
+nav .toggleMenuMingi .bold {
+  color: black;
+}
+nav .toggleMenuMingi li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+nav .toggleMenuReduceri {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 53%, 0.2);
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 75%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.3s;
+}
+nav .toggleMenuReduceri .toggle {
+  list-style: none;
+  padding-top: 20px;
+}
+nav .toggleMenuReduceri .toggle li {
+  padding-top: 15px;
+}
+nav .toggleMenuReduceri .toggle:first-child {
+  padding-top: 45px;
+}
+nav .toggleMenuReduceri .list {
+  color: grey;
+  font-weight: 100;
+}
+nav .toggleMenuReduceri .list:hover {
+  color: greenyellow;
+}
+nav .toggleMenuReduceri .bold {
+  color: black;
+}
+nav .toggleMenuReduceri li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+}
+.carousel .carousel-container {
+  height: 100vh;
+}
+.carousel .slide {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.carousel .slide > .content {
+  width: 100%;
+  height: 100%;
+}
+.carousel .btn-carousel {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 350px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+  display: none;
+}
+.carousel .btn-carousel.next {
+  right: 1rem;
+}
+.carousel .btn-carousel.previous {
+  left: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+.container div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 64px;
+}
+.container div span {
+  color: black;
+  font-size: 12px;
+}
+.container div img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.images-container {
+  width: 100%;
+  background: linear-gradient(to top, white 0%, white 50%, #f6f7f8 50%, #f6f7f8 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30rem;
+}
+.images-container div {
+  position: relative;
+  width: 45%;
+  height: 90%;
+}
+.images-container div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.images-container div button {
+  position: absolute;
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  height: 3rem;
+  padding: 0 5px;
+  max-width: 8.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  bottom: 4%;
+  left: 5%;
+  padding: 0 10px;
+}
+.images-container div button:hover {
+  background-color: #727272;
+  transition: 0.2s;
+}
+
+footer {
+  background-color: #f6f7f8;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .list h4 {
+  padding-bottom: 17px;
+}
+footer .list ul {
+  list-style: none;
+  padding: 0;
+}
+footer .list ul li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+footer .info div {
+  padding: 5px 0;
+}
+footer .info .contact {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+footer .info .contact div {
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+footer .info .trust {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .info .trust p {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+footer .info .trust div {
+  background-color: #f2f2f2;
+  width: 40%;
+  padding-bottom: 15px;
+}
+footer .info .trust div img {
+  width: 100%;
+  height: auto;
+}
+footer .info .brands ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .info .brands ul li {
+  margin-right: 5px;
+}
+footer .info .brands ul li div {
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.form-body {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 59vh;
+  background: white;
+}
+.form-body fieldset {
+  background-color: black;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+.form-body fieldset legend {
+  color: greenyellow;
+  background-color: black;
+  border-radius: 10px;
+}
+.form-body fieldset .inputBox {
+  position: relative;
+  width: 79%;
+  margin: 7%;
+}
+.form-body fieldset .inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid greenyellow;
+  background-color: black;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+.form-body fieldset .inputBox span {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  pointer-events: none;
+  font-size: 0.95em;
+  color: greenyellow;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.form-body fieldset .inputBox input:valid ~ span,
+.form-body fieldset .inputBox input:focus ~ span {
+  color: greenyellow;
+  transform: translateX(5px) translateY(-15px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: black;
+  letter-spacing: 0.2em;
+  border-left: 1px solid greenyellow;
+  border-right: 1px solid greenyellow;
+}
+.form-body fieldset .inputBox input:valid,
+.form-body fieldset .inputBox input:focus {
+  border: 1px solid greenyellow;
+}
+.form-body .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-body .submit-btn {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid greenyellow;
+  background: black;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+.form-body .submit-btn:hover {
+  background: rgba(172, 255, 47, 0.616);
+  transition: 0.5s;
+}
+.form-body .submit-btn:active {
+  background: rgba(172, 255, 47, 0.159);
+}
+.form-body p {
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.form-body p:hover {
+  color: rgba(172, 255, 47, 0.616);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.form-body p:active {
+  color: rgba(172, 255, 47, 0.159);
+}
+
+.produse {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.produse .card {
+  width: 20%;
+  margin: 1%;
+}
+.produse .card .card-image {
+  width: 100%;
+  height: auto;
+}
+.produse .card a {
+  color: black;
+}
+.produse .card p {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 1500px) and (min-width: 992px) {
+  .carousel {
+    height: 100vh;
+  }
+  .carousel .carousel-container .slide {
+    min-width: 100vw;
+    height: 100vh;
+  }
+  .carousel .carousel-container .slide > .content {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    justify-content: space-between;
+  }
+  .header .headerButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+  .header .headerButtons .searchContainer {
+    border: none;
+  }
+  .header .headerButtons .searchContainer .searchBar {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #eef0f6;
+    top: 93.7%;
+    height: 45px;
+  }
+  nav a {
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: greenyellow;
+    cursor: pointer;
+  }
+  nav .secondNav {
+    display: none;
+  }
+  .carousel {
+    height: 80vh;
+  }
+  .carousel .carousel-container .slide {
+    min-width: 100vw;
+    height: 80vh;
+  }
+  .carousel .carousel-container .slide > .content {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    padding-bottom: 37px;
+  }
+  .burger-menu {
+    display: none;
+    min-height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+  }
+  .burger-menu .header-burger {
+    padding: 32px 28px 21px 24px;
+    border-bottom: 1px solid #eef0f6;
+  }
+  .burger-menu .header-burger a {
+    font-size: 22px;
+  }
+  .burger-menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+  }
+  .burger-menu div a {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2;
+    cursor: pointer;
+  }
+  .burger-menu div a:hover {
+    color: #85c042;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container div {
+    width: 35%;
+  }
+  .images-container {
+    display: grid;
+    grid-template: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+    height: 100vh;
+  }
+  .images-container div {
+    width: 80%;
+    height: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */

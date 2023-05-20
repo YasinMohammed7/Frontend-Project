@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Proiect final al grupei 11 din 2023</title>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <section>
+            <div>
+                <h1>Pagina centralizatoare a proiectelor</h1>
+            </div>
+        </section>
+        <section>
+            <h2>Sectiunea Utilizatorului</h2>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <hr>
+                <div class="row" style="color: #05386b;">
+                    <div class="col-2"></div>
+                    <div class="col-3">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            class="img img-fluid" id="img1">
+                        </br>
+                        <button id="b9" class="btn btn-default" style="color: #05386b;">Incarca imaginea</button>
+                    </div>
+                    <div class="col-5">
+                        <p id="p1">Nume</p>
+                        <p id="p2">Prenume</p>
+                        <p id="p3">Data nasterii</p>
+                        <p id="p4">Adresa de e-mail</p>
+                        <p id="p5">Data curenta</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+
+                    <div class="col">
+                        <form class="form-horizontal" style="color: #05386b;">
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="text" class="form-control" id="in0" placeholder="Poza de profil"
+                                        name="poza">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="text" class="form-control" id="in1" placeholder="Nume" name="name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="text" class="form-control" id="in2" placeholder="Prenume"
+                                        name="surname">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="date" class="form-control" id="in3" placeholder="Data nasterii"
+                                        name="date">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <p>
+                                        Genul:
+                                    </p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="in4"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Masculin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="in5"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Feminin</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="email" class="form-control" id="in6" placeholder="Email" name="email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col ">
+                                    <input type="password" class="form-control" id="inpswd4"
+                                        placeholder="Modifica parola" name="pwd">
+                                </div>
+                            </div>
+
+
+
+                        </form>
+
+                        <button class="btn btn-default" id="btnsave">Salveaza datele</button>
+                        <button class="btn btn-default" id="btncancel">Renunta</button>
+                    </div>
+
+                    <div class="col">
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <hr />
+    </main>
+    <footer></footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
