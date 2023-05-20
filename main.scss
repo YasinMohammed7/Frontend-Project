@@ -890,13 +890,13 @@ footer {
     .images-container {
         display: grid;
         grid-template: 1fr 1fr;
-        gap: 20px;
+        gap: 10px;
         place-items: center;
         height: 100vh;
 
         div {
             width: 80%;
-            height: 90%;
+            height: 80%;
         }
     }
 }
