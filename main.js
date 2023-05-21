@@ -45,6 +45,8 @@ function prevSlide() {
     showSlide(currentSlide)
 }
 
+// autoplay carousel
+
 let autoplay = setInterval(() => {
     nextSlide();
 }, 5000);
@@ -124,9 +126,7 @@ function scrollEvent() {
     }
 }
 
-
 window.addEventListener('scroll', scrollEvent)
-
 
 header.addEventListener('mouseover', () => {
     header.style.backgroundColor = 'black'
@@ -293,7 +293,7 @@ checkLogin.addEventListener('click', (event) => {
     }
 })
 
-// pagina de produse
+// product page
 
 const products = [{
     poza: 'https://gfx.r-gol.com/media/res/products/90/160090/465x605/fb8399-060_1.jpg',
@@ -395,7 +395,15 @@ function addProducts(database, parent, clasa, tag) {
         pret.setAttribute("class", "pretProdus");
 
         customElement.appendChild(pret)
+    }
+}
 
+let executeOnce = false
+
+function runOnce() {
+    if (!executeOnce) {
+        addProducts(products, productPage, 'card', 'figure')
+        executeOnce = true
     }
 }
 
@@ -405,9 +413,11 @@ productsButton.addEventListener('click', () => {
     header.removeEventListener('mouseout', mouseout)
     nav.removeEventListener('mouseout', mouseout)
     productPage.style.display = 'flex'
-    addProducts(products, productPage, 'card', 'figure')
+    runOnce()
 
 })
+
+// nav on media query
 
 let navButtons = document.querySelectorAll('.navButtons')
 let headerButtons = document.querySelector('.headerButtons')
@@ -439,4 +449,3 @@ function addToNav() {
 addToNav();
 
 window.addEventListener('resize', addToNav)
-

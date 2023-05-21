@@ -1,3 +1,4 @@
+// media query search bar
 
 $(document).ready(function () {
     let media = window.matchMedia('(max-width: 991px)')
@@ -41,6 +42,8 @@ $(document).ready(function () {
     handleMediaQuery(media)
 
     media.addEventListener('change', handleMediaQuery)
+
+    // burger menu appearance
 
     $('#burger').click(() => {
         $('.burger-menu').animate({ width: 'toggle' })
