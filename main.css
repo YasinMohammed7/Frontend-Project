@@ -664,6 +664,10 @@ footer .info .brands ul li div {
     color: #85c042;
     transition: 0.3s;
   }
+  .produse .card {
+    width: 40%;
+    margin: 1%;
+  }
 }
 @media screen and (max-width: 760px) {
   .container {

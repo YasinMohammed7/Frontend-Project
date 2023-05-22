@@ -273,7 +273,6 @@ createAccount.addEventListener('click', (event) => {
     } else {
         alert('parola trebuie sa contina 8 caractere')
     }
-    alert(`${newUser[0].email}, ${newUser[0].parola}`);
 
     event.preventDefault()
 })
