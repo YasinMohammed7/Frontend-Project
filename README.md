@@ -27,7 +27,7 @@ Website events:
 
 2- After scrolling, the transparent Header and Navigation bar's background becomes black and white; 
 
-3- The pictures slider presents "next and previous" buttons (they are not visible until the user hovers on the pictures slider);
+3- The pictures slider presents "next and previous" buttons (they are not visible until the user hovers on the pictures slider).
 
 
 
@@ -49,6 +49,6 @@ Media queries:
 
 1- Max-width: 991px, the search bar hides until you click the loupe and then it appears;
 
-2- The Navigation bar goes on the bottom of the screen (menu button) with "user", "favorites" and "cart" buttons;
+2- The Navigation bar goes on the bottom of the screen (menu button) with "user", "favorites" and "cart" buttons.
 
 The project it's still in progress from my constantly desire to improve myself. 
