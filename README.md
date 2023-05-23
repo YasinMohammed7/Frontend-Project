@@ -1,17 +1,28 @@
 # Frontend-Project
 
-Inspirational website: https://www.r-gol.com/ro
+Website inspo: https://www.r-gol.com/ro
+Website reproduction: the clienside website (using HTML, SCSS, CSS, JavaScript, jQuery and Bootstrap);
+Steps of reproduction: 
+1-Header: logo, searchBar, user, favorites and cart buttons;
+2- Navigation bar: contains four categories of products;
+3- Pictures slider;
+4- Headings;
+5- Two pictures: the first one (left side) has a "buy right now" button;
+6- Footer. 
 
-I wanted to do a copy of this clienside website using my knowledge in HTML, SCSS, CSS, JAVASCRIPT, JQUERY and BOOTSTRAP 
+Website events: 
+1- Header and Navigation bar are transparent. After hovering, the background of header becomes black, meanwhile the background of Navigation bar changes to white;
+2- After scrolling, the transparent Header and Navigation bar's background becomes black and white; 
+3- The pictures slider presents "next and previous" buttons (they are not visible until the user hovers on the pictures slider);
 
-I started with the header, which has the logo, searchBar, user, favorites and cart buttons
+Buttons events:
+1- Logo (homepage);
+2- User- log in page: "intregistreaza-te" (register);
+3- Shopping button- "cumpara acum" (generates products with a function);
+4- The user can create an account on register page. After the account is created, the user will be automatically redirected to the log in page;
+5- In the log in page, the user must sign in to be redirected to the user page.
 
-The user button has an event when click on it, to show a login page and the logo return to home page on click
-
-The login page has a text "Inregistreaza-te?", which means to register if you don't have an account . When user click on it, it goes to the register page.It has a text "Aveti deja un cont?", when the user click on it, it goes back to the login page. When you create an account, on the webpage appears the login form and when you login, another page it will be displayed, the user page.
-
-The navigation bar has 4 categories of products, which they have a dropdown menu made only in HTML and CSS with a transition on hover.
-
-Both the header and nav have an event on scroll. When the user scroll down, they get a background color, unless they have background transparent
-
-On the top of the home page, i've created a carousel with two buttons, next and previous with a javascript function.
+Media queries:
+1- Max-width: 991px, the search bar hides until you click the loupe and then it appears;
+2- The Navigation bar goes on the bottom of the screen (menu button) with "user", "favorites" and "cart" buttons;
+The project it's still in progress from my constantly desire to improve myself. 
