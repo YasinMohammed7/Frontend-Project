@@ -27,7 +27,9 @@ Website events:
 
 2- After scrolling, the transparent Header and Navigation bar's background becomes black and white; 
 
-3- The pictures slider presents "next and previous" buttons (they are not visible until the user hovers on the pictures slider).
+3- On navigation bar, every category has his own dropdown menu on hover
+
+4- The pictures slider presents "next and previous" buttons (they are not visible until the user hovers on the pictures slider).
 
 
 
@@ -37,7 +39,7 @@ Buttons events:
 
 2- User- log in page: "intregistreaza-te" (register);
 
-3- Shopping button- "cumpara acum" (generates products with a function);
+3- Shopping button- "cumpara acum" (generates products once with a function);
 
 4- The user can create an account on register page. After the account is created, the user will be automatically redirected to the log in page;
 
