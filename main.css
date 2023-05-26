@@ -388,6 +388,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-height: 40vh;
 }
 footer .list h4 {
   padding-bottom: 17px;
@@ -431,7 +432,7 @@ footer .info .trust div {
 }
 footer .info .trust div img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 footer .info .brands ul {
   list-style: none;
@@ -583,6 +584,9 @@ footer .info .brands ul li div {
   .header {
     justify-content: space-between;
   }
+  .header .siteLogo {
+    margin-left: 20px;
+  }
   .header .headerButtons {
     display: flex;
     justify-content: flex-end;
@@ -627,7 +631,61 @@ footer .info .brands ul li div {
     height: 100%;
   }
   footer {
-    padding-bottom: 37px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 25px;
+    height: 70vh;
+  }
+  footer .list {
+    padding-top: 30px;
+  }
+  footer .list ul {
+    display: none;
+  }
+  footer .info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  footer .info .contact {
+    padding: 5px;
+  }
+  footer .info .contact div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+  footer .info .contact div i {
+    font-size: 19px;
+  }
+  footer .info .trust {
+    background-color: #f2f2f2;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+  footer .info .trust div {
+    width: 20%;
+    height: 80%;
+  }
+  footer .info .trust p {
+    font-size: 2rem;
+  }
+  footer .info .brands {
+    padding-top: 40px;
+  }
+  footer .info .brands ul li div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .info .brands ul li div i {
+    font-size: 23px;
   }
   .burger-menu {
     display: none;
@@ -669,7 +727,7 @@ footer .info .brands ul li div {
     margin: 1%;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 730px) {
   .container {
     flex-wrap: wrap;
   }

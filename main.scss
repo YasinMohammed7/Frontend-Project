@@ -491,6 +491,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 40vh;
 
     .list {
         h4 {
@@ -531,7 +532,6 @@ footer {
         .trust {
             display: flex;
             align-items: center;
-
             justify-content: flex-end;
 
             p {
@@ -546,7 +546,7 @@ footer {
 
                 img {
                     width: 100%;
-                    height: auto;
+                    height: 100%;
 
                 }
             }
@@ -772,6 +772,10 @@ footer {
     .header {
         justify-content: space-between;
 
+        .siteLogo {
+            margin-left: 20px;
+        }
+
         .headerButtons {
             display: flex;
             justify-content: flex-end;
@@ -832,7 +836,87 @@ footer {
     }
 
     footer {
-        padding-bottom: 37px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 25px;
+        height: 70vh;
+
+        .list {
+
+            ul {
+                display: none;
+            }
+
+            padding-top: 30px;
+        }
+
+        .info {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+
+
+            .contact {
+                padding: 5px;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+
+                    i {
+
+                        font-size: 19px;
+                    }
+                }
+            }
+
+
+
+            .trust {
+                background-color: #f2f2f2;
+                justify-content: center;
+                flex-basis: 100%;
+
+
+                div {
+                    width: 20%;
+                    height: 80%;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+
+
+            }
+
+            .brands {
+                padding-top: 40px;
+
+                ul {
+
+                    li {
+                        div {
+                            width: 60px;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            i {
+                                font-size: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     .burger-menu {
@@ -885,7 +969,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 730px) {
     .container {
         flex-wrap: wrap;
 
