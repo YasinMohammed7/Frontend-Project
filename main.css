@@ -634,10 +634,10 @@ footer .info .brands ul li div {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 25px;
     height: 70vh;
   }
   footer .list {
+    padding-left: 25px;
     padding-top: 30px;
   }
   footer .list ul {
@@ -651,6 +651,7 @@ footer .info .brands ul li div {
   }
   footer .info .contact {
     padding: 5px;
+    padding-left: 25px;
   }
   footer .info .contact div {
     display: flex;
@@ -676,6 +677,7 @@ footer .info .brands ul li div {
   }
   footer .info .brands {
     padding-top: 40px;
+    padding-left: 25px;
   }
   footer .info .brands ul li div {
     width: 60px;

@@ -839,10 +839,11 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-left: 25px;
         height: 70vh;
 
+
         .list {
+            padding-left: 25px;
 
             ul {
                 display: none;
@@ -860,6 +861,7 @@ footer {
 
             .contact {
                 padding: 5px;
+                padding-left: 25px;
 
                 div {
                     display: flex;
@@ -883,6 +885,7 @@ footer {
                 flex-basis: 100%;
 
 
+
                 div {
                     width: 20%;
                     height: 80%;
@@ -897,6 +900,7 @@ footer {
 
             .brands {
                 padding-top: 40px;
+                padding-left: 25px;
 
                 ul {
 
