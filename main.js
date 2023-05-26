@@ -8,11 +8,7 @@ const nextButton = document.querySelector('#next');
 
 let currentSlide = 0;
 
-
-
-
 function showSlide(index) {
-
 
     slides.forEach((slide) => {
         slide.style.opacity = 0 // hide all the slides
