@@ -407,7 +407,7 @@ productsButton.addEventListener('click', () => {
     window.removeEventListener('scroll', scrollEvent)
     header.removeEventListener('mouseout', mouseout)
     nav.removeEventListener('mouseout', mouseout)
-    productPage.style.display = 'flex'
+    productPage.style.display = 'grid'
     runOnce()
 
 })

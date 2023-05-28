@@ -393,6 +393,9 @@ footer {
 footer .list h4 {
   padding-bottom: 17px;
 }
+footer .list h4 span {
+  display: none;
+}
 footer .list ul {
   list-style: none;
   padding: 0;
@@ -547,13 +550,10 @@ footer .info .brands ul li div {
 }
 
 .produse {
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.produse .card {
-  width: 20%;
-  margin: 1%;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  padding-bottom: 30px;
 }
 .produse .card .card-image {
   width: 100%;
@@ -634,11 +634,17 @@ footer .info .brands ul li div {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 70vh;
+    min-height: 26rem;
   }
   footer .list {
     padding-left: 25px;
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+  footer .list h4 .arrow-down1,
+  footer .list h4 .arrow-down2 {
+    position: absolute;
+    display: inline;
+    right: 4%;
   }
   footer .list ul {
     display: none;
@@ -676,8 +682,9 @@ footer .info .brands ul li div {
     font-size: 2rem;
   }
   footer .info .brands {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 25px;
+    padding-bottom: 60px;
   }
   footer .info .brands ul li div {
     width: 60px;
@@ -724,9 +731,8 @@ footer .info .brands ul li div {
     color: #85c042;
     transition: 0.3s;
   }
-  .produse .card {
-    width: 40%;
-    margin: 1%;
+  .produse {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 730px) {

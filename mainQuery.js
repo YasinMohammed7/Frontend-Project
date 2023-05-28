@@ -53,4 +53,32 @@ $(document).ready(function () {
     $('.hide-burger').click(() => {
         $('.burger-menu').animate({ width: 'toggle' })
     })
+
+    // footer 
+
+    $('.arrow-down1').click(() => {
+        if ($('.arrow-down1').css("transform") === "none") {
+
+            $('.arrow-down1').css("transform", "rotateZ(-180deg)");
+        } else {
+            $('.arrow-down1').css("transform", "none");
+        }
+
+        $('.arrow-down1').css("transition", "0.5s")
+        $('.footer-col1').slideToggle()
+    })
+
+    $('.arrow-down2').click(() => {
+        if ($('.arrow-down2').css("transform") === "none") {
+
+            $('.arrow-down2').css("transform", "rotateZ(-180deg)");
+        } else {
+            $('.arrow-down2').css("transform", "none");
+        }
+
+        $('.arrow-down2').css("transition", "0.5s")
+        $('.footer-col2').slideToggle()
+    })
+
+
 });
