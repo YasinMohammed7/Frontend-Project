@@ -498,7 +498,8 @@ footer {
         h4 {
             padding-bottom: 17px;
 
-            span {
+            .arrow-down1,
+            .arrow-down2 {
                 display: none;
             }
         }
@@ -857,13 +858,14 @@ footer {
                     position: absolute;
                     display: inline;
                     right: 4%;
+                    cursor: pointer;
+
                 }
             }
 
             ul {
                 display: none;
             }
-
         }
 
         .info {

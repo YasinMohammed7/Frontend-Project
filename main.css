@@ -393,7 +393,8 @@ footer {
 footer .list h4 {
   padding-bottom: 17px;
 }
-footer .list h4 span {
+footer .list h4 .arrow-down1,
+footer .list h4 .arrow-down2 {
   display: none;
 }
 footer .list ul {
@@ -645,6 +646,7 @@ footer .info .brands ul li div {
     position: absolute;
     display: inline;
     right: 4%;
+    cursor: pointer;
   }
   footer .list ul {
     display: none;
